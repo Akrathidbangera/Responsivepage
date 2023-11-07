@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Responsive Registration Form</title>
+        <meta name="viewport" content="width=device-widht,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="form-title">Registration</h1>
+            <form action="#">
+                <div class="main-user-info">
+                    <div class="user-input-box">
+                        <label for="fullName">Full Name</label>
+                        <input type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter Full Name"/>
+
+                    </div>
+                    <div class="user-input-box">
+                        <label for="username">Username</label>
+                        <input type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Enter Username"/>
+
+                    </div>
+                    <div class="user-input-box">
+                        <i class='bx bxs-envelope' ></i>
+                        <label for="email">Email</label>
+                        <input type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter Email"/>
+
+                    </div>
+                    <div class="user-input-box">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                placeholder="Enter Phone Number"/>
+
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="passowrd">Passowrd</label>
+                        <input type="password"
+                                id="passowrd"
+                                name="passowrd"
+                                placeholder="Enter Passowrd"/>
+
+                    </div>
+                    <div class="user-input-box">
+                        <label for="confirmPassowrd">Confirm Passowrd</label>
+                        <input type="password"
+                                id="confirmPassowrd"
+                                name="confirmPassowrd"
+                                placeholder="Confirm Passowrd"/>
+
+                    </div>
+                </div>
+                <div class="gender-details-box">
+                    <span class="gender-title">Gender</span>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div class="group">
+                    <span><a href="#">Forget-Password</a></span>
+                    <span><a href="#">Login</a></span>
+                </div>
+            </form>
+        </div>
+         <!--Second step we have to create a pop up value-->
+         <div class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>Thank You!</h2>
+            <p>Your Registration was Successfull.Thanks!</p>
+            <a href="#"><button onclick="CloseSlide()">OK</button></a>
+        </div>
+    </div>
+       
+    </body>
+    </html>
